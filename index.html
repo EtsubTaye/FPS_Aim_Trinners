@@ -8,7 +8,22 @@
     <title>FPS TRINNER</title>
 </head>
 <body>
-    
+    <div id="gameFrame" > //mainframe
+        <audio src=" bgmusic.mp3"></audio>
+       <div id="HP"></div> //heath
+       <h2 style="font-size: 42px;"> HYDRA HUNTER</h2> 
+       
+       <div class="enemy" id="enemy1"  onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy5" onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy6" onclick="iShoot(this)"></div>
+       <div class="enemy" id="enemy7" onclick="iShoot(this)"></div>
+      
+       <button onclick="newGame()">S t a r t </button>
+      
+   </div >
 
     <script src="main.js"></script>
 </body>
