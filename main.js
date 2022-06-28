@@ -20,7 +20,7 @@ function attackAI(enemy) {
    setTimeout(()=>{
        enemy.classList.remove("showing")
 
-   },2000);
+   },2000); /*speed of enenmy box showing and being removed */
 }
 
 var gunsound;
