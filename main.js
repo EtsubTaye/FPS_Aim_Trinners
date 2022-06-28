@@ -27,7 +27,7 @@ var gunsound;
 
 function ShootingAI(enemy){
    
-   if(!enemy.classList.contains("dead")) {
+   if(!enemy.classList.contains("dead"))/*  */ {
    enemy.classList.add("shooting")
    healthpoint(healthpoints - 10);
    setTimeout(()=>{
@@ -40,7 +40,7 @@ function onlineEnemies(){
    return document.querySelectorAll(".enemy:not(.dead)");
 }
 function RandomAI(){
-var randomai=Math.random()* onlineEnemies().length;
+var randomai=Math.random()* onlineEnemies().length;/* random generation of enemy boxs  */
 randomai=Math.floor(randomai);
 var enemy=onlineEnemies()[randomai];
 var randomDelay=Math.random()*100 +1000;
